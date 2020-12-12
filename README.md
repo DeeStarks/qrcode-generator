@@ -14,4 +14,4 @@ After installing and running the code but get an error message like:
 ```
 ModuleNotFoundError: Could not found module name 'png'
 ```
-you have to install png using `pip install pypng'. 
+you have to install png using `pip install pypng`. 
