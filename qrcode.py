@@ -19,6 +19,12 @@ class QR_Gen:
                     filename += keyword + "_"
         else:
             filename = "qr_img"
+        
+        BASE_DIR = os.listdir()
+
+        if "qrcode_images" not in BASE_DIR:
+            os.system(f"mkdir qrcode_images")
+
         name = f"qrcode_images/{filename}{now.strftime('%d%m%Y%H%M%S')}.png"
         qr_code.png(name, scale=20)
         os.system(f"start {name}")
